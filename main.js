@@ -24,8 +24,6 @@ document.getElementById('history-btn').addEventListener('click',function(){
 
 
 // part 1
-const inputField = document.getElementById("please-input");
-const submitButton = document.getElementById("donate-please");
 const modal=document.getElementById('my_modal_5');
 document.getElementById('donate-please').addEventListener('click',function()
 {
@@ -39,6 +37,7 @@ document.getElementById('donate-please').addEventListener('click',function()
         return;
     }
     const changeValue=changeInput(addInput);
+    changeInput(totalAmount);
     const changeDonation=changeInput(donationAmount);
     const totalDonation = changeDonation + changeValue;
     const changeTotalAmount= totalAmount - changeValue;
@@ -55,3 +54,34 @@ document.getElementById('donate-please').addEventListener('click',function()
 )
 // part 1 end 
 
+
+// part 2 start
+const modal1=document.getElementById('my_modal_6');
+document.getElementById('donate-please1').addEventListener('click',function()
+{
+    const addInput=getid('please-input1').value;
+    const totalAmount=getid('total-amount').innerText;
+    const donationAmount=getid('total-donation-amount1').innerText;
+    const addhtml=document.getElementById('addedHistory');
+    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<0||addInput=='')
+    { 
+        alert("invalid input");
+        return;
+    }
+    const changeValue=changeInput(addInput);
+    changeInput(totalAmount);
+    const changeDonation=changeInput(donationAmount);
+    const totalDonation = changeDonation + changeValue;
+    const changeTotalAmount= totalAmount - changeValue;
+    getid('total-amount').innerText=changeTotalAmount;
+    getid('total-donation-amount1').innerText=totalDonation;
+    addhtml.innerHTML+=`
+    <div class="w-10/12 border border-blue-200 rounded-lg">
+    <h1>${changeValue} Donate for Flood Relief in Feni,Bangladesh ${totalDonation}</h1>
+    </div>
+    `;    
+    modal1.showModal();
+}
+
+)
+// part 2 end
