@@ -85,3 +85,36 @@ document.getElementById('donate-please1').addEventListener('click',function()
 
 )
 // part 2 end
+
+// part 3 start 
+
+const modal2=document.getElementById('my_modal_7');
+document.getElementById('donate-please2').addEventListener('click',function()
+{
+    const addInput=getid('please-input2').value;
+    const totalAmount=getid('total-amount').innerText;
+    const donationAmount=getid('total-donation-amount2').innerText;
+    const addhtml=document.getElementById('addedHistory');
+    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<0||addInput=='')
+    { 
+        alert("invalid input");
+        return;
+    }
+    const changeValue=changeInput(addInput);
+    changeInput(totalAmount);
+    const changeDonation=changeInput(donationAmount);
+    const totalDonation = changeDonation + changeValue;
+    const changeTotalAmount= totalAmount - changeValue;
+    getid('total-amount').innerText=changeTotalAmount;
+    getid('total-donation-amount2').innerText=totalDonation;
+    addhtml.innerHTML+=`
+    <div class="w-10/12 border border-blue-200 rounded-lg">
+    <h1>${changeValue} Aid for Injured in the Quota Movement ${totalDonation}</h1>
+    </div>
+    `;    
+    modal2.showModal();
+}
+
+)
+
+// part 3 end
