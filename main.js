@@ -41,11 +41,13 @@ document.getElementById('donate-please').addEventListener('click',function()
     const changeDonation=changeInput(donationAmount);
     const totalDonation = changeDonation + changeValue;
     const changeTotalAmount= totalAmount - changeValue;
+    const date = new Date();
     getid('total-amount').innerText=changeTotalAmount;
     getid('total-donation-amount').innerText=totalDonation;
     addhtml.innerHTML+=`
-    <div class="w-10/12 border border-blue-200 rounded-lg">
-    <h1>${changeValue} taka added from Donate for Flood at Noakhali, Bangladesh Total ${totalDonation}</h1>
+    <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
+    <h1>${changeValue} taka is donated for Donate for Flood at Noakhali, Bangladesh </h1>
+    <h2>${date}</h2>
     </div>
     `;    
     modal.showModal();
@@ -73,11 +75,13 @@ document.getElementById('donate-please1').addEventListener('click',function()
     const changeDonation=changeInput(donationAmount);
     const totalDonation = changeDonation + changeValue;
     const changeTotalAmount= totalAmount - changeValue;
+    const date = new Date();
     getid('total-amount').innerText=changeTotalAmount;
     getid('total-donation-amount1').innerText=totalDonation;
     addhtml.innerHTML+=`
-    <div class="w-10/12 border border-blue-200 rounded-lg">
-    <h1>${changeValue} Donate for Flood Relief in Feni,Bangladesh ${totalDonation}</h1>
+    <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
+    <h1>${changeValue} taka is donated for Flood Relief in Feni,Bangladesh</h1>
+    <h2>${date}</h2>
     </div>
     `;    
     modal1.showModal();
@@ -105,11 +109,13 @@ document.getElementById('donate-please2').addEventListener('click',function()
     const changeDonation=changeInput(donationAmount);
     const totalDonation = changeDonation + changeValue;
     const changeTotalAmount= totalAmount - changeValue;
+    const date = new Date();
     getid('total-amount').innerText=changeTotalAmount;
     getid('total-donation-amount2').innerText=totalDonation;
     addhtml.innerHTML+=`
-    <div class="w-10/12 border border-blue-200 rounded-lg">
-    <h1>${changeValue} Aid for Injured in the Quota Movement ${totalDonation}</h1>
+    <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
+    <h1>${changeValue} is donated for Aid for Injured in the Quota Movement</h1>
+    <h2>${date}</h2>
     </div>
     `;    
     modal2.showModal();
