@@ -47,7 +47,7 @@ document.getElementById('donate-please').addEventListener('click',function()
     addhtml.innerHTML+=`
     <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
     <h1>${changeValue} taka is donated for Donate for Flood at Noakhali, Bangladesh </h1>
-    <h2>${date}</h2>
+    <h2 class="text-sm text-slate-blue">${date}</h2>
     </div>
     `;    
     modal.showModal();
@@ -81,7 +81,8 @@ document.getElementById('donate-please1').addEventListener('click',function()
     addhtml.innerHTML+=`
     <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
     <h1>${changeValue} taka is donated for Flood Relief in Feni,Bangladesh</h1>
-    <h2>${date}</h2>
+    <h2 text-sm text-slate-blue>${date}</h2>
+    <h2 class="">${date}</h2>
     </div>
     `;    
     modal1.showModal();
@@ -115,7 +116,7 @@ document.getElementById('donate-please2').addEventListener('click',function()
     addhtml.innerHTML+=`
     <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
     <h1>${changeValue} is donated for Aid for Injured in the Quota Movement</h1>
-    <h2>${date}</h2>
+    <h2 class="text-sm text-slate-blue">${date}</h2>
     </div>
     `;    
     modal2.showModal();
