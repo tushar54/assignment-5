@@ -34,6 +34,7 @@ document.getElementById('donate-please').addEventListener('click',function()
     if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<=0||addInput=='')
     { 
         alert("invalid input");
+        ocument.getElementById("please-input").value = "";
         return;
     }
     const changeValue=changeInput(addInput);
@@ -50,7 +51,10 @@ document.getElementById('donate-please').addEventListener('click',function()
     <h2 class="text-sm text-slate-blue">${date}</h2>
     </div>
     `;    
+    
     modal.showModal();
+    document.getElementById("please-input").value = "";
+
 }
 
 )
@@ -67,6 +71,7 @@ document.getElementById('donate-please1').addEventListener('click',function()
     const addhtml=document.getElementById('addedHistory');
     if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<=0||addInput=='')
     { 
+        document.getElementById("please-input1").value = "";
         alert("invalid input");
         return;
     }
@@ -86,6 +91,7 @@ document.getElementById('donate-please1').addEventListener('click',function()
     </div>
     `;    
     modal1.showModal();
+    document.getElementById("please-input1").value = "";
 }
 
 )
@@ -102,6 +108,7 @@ document.getElementById('donate-please2').addEventListener('click',function()
     const addhtml=document.getElementById('addedHistory');
     if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<=0||addInput=='')
     { 
+        document.getElementById("please-input2").value = "";
         alert("invalid input");
         return;
     }
@@ -120,6 +127,7 @@ document.getElementById('donate-please2').addEventListener('click',function()
     </div>
     `;    
     modal2.showModal();
+    document.getElementById("please-input2").value = "";
 }
 
 )
