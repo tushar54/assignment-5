@@ -81,8 +81,8 @@ document.getElementById('donate-please1').addEventListener('click',function()
     addhtml.innerHTML+=`
     <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
     <h1>${changeValue} taka is donated for Flood Relief in Feni,Bangladesh</h1>
-    <h2 text-sm text-slate-blue>${date}</h2>
-    <h2 class="">${date}</h2>
+    <h2 class="text-sm text-slate-blue">${date}</h2>
+   
     </div>
     `;    
     modal1.showModal();
