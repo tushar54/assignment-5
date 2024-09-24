@@ -31,7 +31,7 @@ document.getElementById('donate-please').addEventListener('click',function()
     const totalAmount=getid('total-amount').innerText;
     const donationAmount=getid('total-donation-amount').innerText;
     const addhtml=document.getElementById('addedHistory');
-    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<0||addInput=='')
+    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<=0||addInput=='')
     { 
         alert("invalid input");
         return;
@@ -65,7 +65,7 @@ document.getElementById('donate-please1').addEventListener('click',function()
     const totalAmount=getid('total-amount').innerText;
     const donationAmount=getid('total-donation-amount1').innerText;
     const addhtml=document.getElementById('addedHistory');
-    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<0||addInput=='')
+    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<=0||addInput=='')
     { 
         alert("invalid input");
         return;
@@ -100,7 +100,7 @@ document.getElementById('donate-please2').addEventListener('click',function()
     const totalAmount=getid('total-amount').innerText;
     const donationAmount=getid('total-donation-amount2').innerText;
     const addhtml=document.getElementById('addedHistory');
-    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<0||addInput=='')
+    if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<=0||addInput=='')
     { 
         alert("invalid input");
         return;
