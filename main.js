@@ -44,7 +44,6 @@ document.getElementById('donate-please').addEventListener('click',function()
     const date = new Date();
     getid('total-amount').innerText=changeTotalAmount;
     getid('total-donation-amount').innerText=totalDonation;
-    addhtml.removeAttribute("hidden");
     addhtml.innerHTML+=`
     <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
     <h1>${changeValue} taka is donated for Donate for Flood at Noakhali, Bangladesh </h1>
@@ -79,7 +78,6 @@ document.getElementById('donate-please1').addEventListener('click',function()
     const date = new Date();
     getid('total-amount').innerText=changeTotalAmount;
     getid('total-donation-amount1').innerText=totalDonation;
-    addhtml.removeAttribute("hidden");
     addhtml.innerHTML+=`
     <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
     <h1>${changeValue} taka is donated for Flood Relief in Feni,Bangladesh</h1>
@@ -115,7 +113,6 @@ document.getElementById('donate-please2').addEventListener('click',function()
     const date = new Date();
     getid('total-amount').innerText=changeTotalAmount;
     getid('total-donation-amount2').innerText=totalDonation;
-    addhtml.removeAttribute("hidden");
     addhtml.innerHTML+=`
     <div class="w-10/12 border border-blue-200 rounded-lg mx-auto shadow-sm p-6 space-y-2 mb-2">
     <h1>${changeValue} is donated for Aid for Injured in the Quota Movement</h1>
