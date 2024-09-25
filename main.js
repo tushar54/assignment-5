@@ -34,7 +34,7 @@ document.getElementById('donate-please').addEventListener('click',function()
     if(isNaN(addInput)||parseFloat(addInput)>parseFloat(totalAmount)||parseFloat(addInput)<=0||addInput=='')
     { 
         alert("invalid input");
-        ocument.getElementById("please-input").value = "";
+        document.getElementById("please-input").value = "";
         return;
     }
     const changeValue=changeInput(addInput);
